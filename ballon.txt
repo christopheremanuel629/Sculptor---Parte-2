@@ -1,39 +1,10 @@
-/***
-    UNIVERSIDADE FEDERAL DO RIO GRANDE DO NORTE
-    CENTRO DE TECNOLOGIA - DEPARTAMENTO DE ENGENHARIA EL…TRICA
-    PROGRAMA«√O AVAN«ADA (DCA 0803) - 2024.2
+dim 300 300 300
 
-    Docente: Agostinho Brito.
+Chat gpt - converta o codigo abaixo para o formato a seguir(formato)
 
-    Autor: Christopher Emanuel de Lima Gomes.
-    MatrÌcula: 20240012282
-
-
-
-**/
-
-
-#include <iostream>
-#include "sculptor.h"
-#include <cmath>
-
-
-    class meuBalao {
-
-    private:
-        Sculptor ballon;
-
-    public:
-
-        meuBalao(int x, int y, int z) : ballon(x, y, z) {
-        ballon.cutBox(0, x, 0, y, 0, z);
-    }
-    void criarBalao (){
-
-        //Cor vermelha para bal„o
         ballon.setColor(1.0, 0.0, 0.0, 1.0);
 
-        //Esfera do bal„o
+        //Esfera do bal√£o
         ballon.putSphere(100, 250, 100, 100);
         ballon.cutSphere(100,250,100,99);
 
@@ -46,7 +17,7 @@
             ballon.cutEllipsoid(100, (100+h), 100, 20, 1, 20);
             }
 
-        //Estrutura de fixaÁ„o entre bal„o e o cesto
+        //Estrutura de fixa√ß√£o entre bal√£o e o cesto
         for (int i = 0; i <=50; i++){
             ballon.putEllipsoid(100, (125+i), 100,(14+i), 1, (14+i));
             ballon.cutEllipsoid(100, (125+i), 100,(13+i), 1, (13+i));
@@ -87,21 +58,21 @@
             ballon.putBox((121-c), (122-c), (89), (89), (77+c), (78+c));
         }
 
-        //Cordas atÈ o bal„o
+        //Cordas at√© o bal√£o
         ballon.putBox(77, 79, 89, 175, 77, 79);
         ballon.putBox(121, 123, 89, 175, 121, 123);
         ballon.putBox(77, 79, 89, 175, 121, 123);
         ballon.putBox(121, 123,89, 175, 77, 79);
 
 
-        //Estrutura de fixaÁ„o das cordas
+        //Estrutura de fixa√ß√£o das cordas
         ballon.setColor(0.80, 0.52, 0.25, 1.0);
         ballon.putBox(75, 81, 81, 86, 75, 81);
         ballon.putBox(75, 81, 81, 86, 119, 125);
         ballon.putBox(119, 125, 81, 86, 75, 81);
         ballon.putBox(119, 125, 81, 86, 119, 125);
 
-        //Estrutura de fixaÁ„o entre as cordas
+        //Estrutura de fixa√ß√£o entre as cordas
         ballon.setColor(0.80, 0.52, 0.25, 1.0);
         ballon.putBox(82, 119, 81, 86, 75, 81);
         ballon.putBox(82, 119, 81, 86, 119, 125);
@@ -152,7 +123,7 @@
             ballon.setColor(1.0, 0.271, 0.0, 0.7);
             ballon.putBox(98,102,91,104, 98,102);
 
-            //Tentativa de criar a sensaÁ„o do fogo
+            //Tentativa de criar a sensa√ß√£o do fogo
             for (int l = 0; l <= 3; l++){
                 ballon.cutBox((98+l),(102-l),(104-l),(104-l), (98+l),(102-l));
                 ballon.cutBox((98+l),(102-l),(104-l),(104-l), (98),(98));
@@ -194,7 +165,7 @@ int main() {
     // Salvando o resultado no formato OFF
     desenho.salvarOFF("balloon.off");
 
-    std::cout << "Bal„o criado e salvo como 'balloon.off'" << std::endl;
+    std::cout << "Bal√£o criado e salvo como 'balloon.off'" << std::endl;
     return 0;
 }
 
