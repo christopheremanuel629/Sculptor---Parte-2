@@ -15,7 +15,7 @@ void PutSphere::draw(Scultor &t)
             for(int k = -radius; k<=radius; k++){
 
               if ((i*i+j*j+k*k) < radius*radius){
-                t.putVoxel(i+xcenter,j+ycenter,k+zcenter);
+                t.putVoxels(i+xcenter,j+ycenter,k+zcenter);
               }
             }
         }
