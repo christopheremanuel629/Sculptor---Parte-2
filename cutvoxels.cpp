@@ -1,11 +1,11 @@
 #include "cutvoxels.h"
 
-CutVoxel::CutVoxel(int x, int y, int z)
+CutVoxel::CutVoxels(int x, int y, int z)
 {
     this->x=x; this->y=y; this->z=z;
 }
 
-void CutVoxel::draw(Scultor &t)
+void CutVoxels::draw(Scultor &t)
 {
     t.cutVoxels(x,y,z);
 }
