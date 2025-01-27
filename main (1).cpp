@@ -22,7 +22,7 @@ int main()
     Interpretador anl;
     vector<FiguraGeometrica*> fig;
 
-    fig = anl.anl("perry.02.txt"); // o container fig recebe o container que armazenou todos os processos que serão realizados
+    fig = anl.anl("projeto.txt"); // o container fig recebe o container que armazenou todos os processos que serão realizados
 
     sx = new Scultor(anl.getdimx(),anl.getdimy(),anl.getdimz());   // alocação de memória, recebendo as dimensões do desenho
 
@@ -31,7 +31,7 @@ int main()
         fig[x] -> draw(*sx);
     }
 
-    sx->writeOFF((char*)"perrypart02.off"); // criação do arquivo .off
+    sx->writeOFF((char*)"projeto.off"); // criação do arquivo .off
 
     for (size_t x=0; x<fig.size(); x++){
         delete fig[x];
