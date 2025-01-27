@@ -1,3 +1,9 @@
+/***
+    PROJETO SCULPTO 3D - PARTE 2
+    ALUNO: CHRISTOPHER EMANUEL DE LIMA GOMES
+
+***/
+
 #include "cutsphere.h"
 
 CutSphere::CutSphere(int xcenter, int ycenter, int zcenter, int radius)
