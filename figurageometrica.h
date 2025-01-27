@@ -1,3 +1,9 @@
+/***
+    PROJETO SCULPTO 3D - PARTE 2
+    ALUNO: CHRISTOPHER EMANUEL DE LIMA GOMES
+
+***/
+
 #ifndef FIGURAGEOMETRICA_H
 #define FIGURAGEOMETRICA_H
 #include "scultor.h"
