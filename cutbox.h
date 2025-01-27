@@ -1,3 +1,9 @@
+/***
+    PROJETO SCULPTO 3D - PARTE 2
+    ALUNO: CHRISTOPHER EMANUEL DE LIMA GOMES
+
+***/
+
 #ifndef CUTBOX_H
 #define CUTBOX_H
 
