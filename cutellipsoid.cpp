@@ -1,3 +1,9 @@
+/***
+    PROJETO SCULPTO 3D - PARTE 2
+    ALUNO: CHRISTOPHER EMANUEL DE LIMA GOMES
+
+***/
+
 #include "cutellipsoid.h"
 
 CutEllipsoid::CutEllipsoid(int xcenter_, int ycenter_, int zcenter_, int rx_, int ry_, int rz_)
