@@ -17,7 +17,7 @@ void CutEllipsoid::draw(Scultor &t)
              newz = ((float)(z-zcenter_)*(float)(z-zcenter_))/(rz_ * rz_);
 
              if ((newx + newy + newz) < 1){
-                 t.cutVoxel(x,y,z);
+                 t.cutVoxels(x,y,z);
              }
              }
          }
