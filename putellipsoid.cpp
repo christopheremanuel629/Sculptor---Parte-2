@@ -1,3 +1,9 @@
+/***
+    PROJETO SCULPTO 3D - PARTE 2
+    ALUNO: CHRISTOPHER EMANUEL DE LIMA GOMES
+
+***/
+
 #include "putellipsoid.h"
 #include "scultor.h"
 #include "interpretador.h"
@@ -21,7 +27,7 @@ void PutEllipsoid::draw(Scultor &t)
              newz = ((float)(z-zcenter)*(float)(z-zcenter))/(rz * rz);
 
              if ((newx + newy + newz) < 1){
-                 t.putVoxel(x,y,z);
+                 t.putVoxels(x,y,z);
              }
              }
          }
