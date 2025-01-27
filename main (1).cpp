@@ -5,11 +5,11 @@
 #include "scultor.h"
 #include "interpretador.h"
 #include <vector>
-#include "putvoxel.h"
+#include "putvoxels.h"
 #include "putbox.h"
 #include "putsphere.h"
 #include "putellipsoid.h"
-#include "cutvoxel.h"
+#include "cutvoxels.h"
 #include "cutbox.h"
 #include "cutsphere.h"
 #include "cutellipsoid.h"
