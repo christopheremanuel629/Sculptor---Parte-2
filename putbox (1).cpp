@@ -14,7 +14,7 @@ void PutBox::draw(Scultor &t) // Método draw presente em todas as subclasses é
     for(int x = x0; x<x1; x++){
        for (int y = y0; y<y1; y++){
            for (int z = z0; z<z1; z++){
-               t.putVoxel(x,y,z);
+               t.putVoxels(x,y,z);
            }
        }
     }
