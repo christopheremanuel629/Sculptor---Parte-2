@@ -46,12 +46,12 @@ vector<FiguraGeometrica*> Interpretador:: anl(string filename){
     else if(pp.compare("putvoxels")==0){
         int x_,y_,z_;
         ss >> x_ >> y_ >> z_ >> r >> g >> b >> a;
-        figuras.push_back(new PutVoxel(x_, y_, z_, r, g, b, a));
+        figuras.push_back(new PutVoxels(x_, y_, z_, r, g, b, a));
     }
     else if(pp.compare("cutvoxels")==0){
         int x_, y_, z_;
         ss >> x_ >> y_ >> z_;
-        figuras.push_back(new CutVoxel(x_,y_,z_));
+        figuras.push_back(new CutVoxels(x_,y_,z_));
     }
     else if(pp.compare("putbox")==0){
         int x0; int x1; int y0; int y1; int z0; int z1;
