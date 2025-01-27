@@ -10,7 +10,7 @@ void CutBox::draw(Scultor &t) // Como no "cut" a intenção é passar a borracha
     for(int x = x0; x<x1; x++){
        for (int y = y0; y<y1; y++){
            for (int z = z0; z<z1; z++){
-               t.cutVoxel(x,y,z);
+               t.cutVoxels(x,y,z);
            }
        }
     }
