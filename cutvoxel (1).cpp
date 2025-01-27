@@ -1,4 +1,4 @@
-#include "cutvoxel.h"
+#include "cutvoxels.h"
 
 CutVoxel::CutVoxel(int x, int y, int z)
 {
@@ -7,5 +7,5 @@ CutVoxel::CutVoxel(int x, int y, int z)
 
 void CutVoxel::draw(Scultor &t)
 {
-    t.cutVoxel(x,y,z);
+    t.cutVoxels(x,y,z);
 }
