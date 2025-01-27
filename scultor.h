@@ -1,24 +1,25 @@
-#ifndef SCULTOR_H
-#define SCULTOR_H
-#include "Voxel.h"
-class Scultor
-{
-protected:
-    Voxel ***v; // Matrix 3D
-    int nx,ny,nz; // Dimensões
-    float r,g,b,a; // Propriedades do Voxel
-    float fix;
+#ifndef SCULPTOR_H
+#define SCULPTOR_H
+#include "Voxels.h"
+#include <string>
+ 
+class Sculptor {
+private:
+    Voxels ***v;
+    int nx, ny, nz; 
+    float r, g, b, a; 
 
 public:
-    Scultor(int nx1, int ny1, int nz1);
-    ~Scultor();
-    void setColor(float r1, float g1, float b1, float alpha);
-    void putVoxel(int x, int y, int z);
-    void cutVoxel(int x, int y, int z);
+    Sculptor(int _nx, int _ny, int _nz);
+    ~Sculptor();
+    void setColor(float r, float g, float b, float a);   
+    void putVoxels(int x, int y, int z);
+    void cutVoxels(int x, int y, int z);
     int getx();
     int gety();
     int getz();
-    void writeOFF(char *filename);
 
+    void writeOFF(const std::string &filename);
 };
-#endif // SCULTOR_H
+
+#endif // SCULPTOR_H
