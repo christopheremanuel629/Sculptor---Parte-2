@@ -4,11 +4,11 @@
 #include <string>
 #include <sstream>
 #include <vector>
-#include "putvoxel.h"
+#include "putvoxels.h"
 #include "putbox.h"
 #include "putsphere.h"
 #include "putellipsoid.h"
-#include "cutvoxel.h"
+#include "cutvoxels.h"
 #include "cutbox.h"
 #include "cutsphere.h"
 #include "cutellipsoid.h"
@@ -43,12 +43,12 @@ vector<FiguraGeometrica*> Interpretador:: anl(string filename){
     if(pp.compare("dim")==0){
         ss >> dimx >> dimy >> dimz;
     }
-    else if(pp.compare("putvoxel")==0){
+    else if(pp.compare("putvoxels")==0){
         int x_,y_,z_;
         ss >> x_ >> y_ >> z_ >> r >> g >> b >> a;
         figuras.push_back(new PutVoxel(x_, y_, z_, r, g, b, a));
     }
-    else if(pp.compare("cutvoxel")==0){
+    else if(pp.compare("cutvoxels")==0){
         int x_, y_, z_;
         ss >> x_ >> y_ >> z_;
         figuras.push_back(new CutVoxel(x_,y_,z_));
