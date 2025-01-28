@@ -1,172 +1,666 @@
 dim 300 300 300
+putbox 100 200 250 251 100 200 1.0 0.0 0.0 1.0
+putsphere 0 100 250 100 1.0 0.0 0.0 1.0
+cutsphere 100 250 100 99
 
-Chat gpt - converta o codigo abaixo para o formato a seguir(formato)
+putellipsoid 100 100 100 20 1 20 1.0 0.0 0.0 1.0
 
-        ballon.setColor(1.0, 0.0, 0.0, 1.0);
+putellipsoid 100 100 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 100 100 20 1 20
 
-        //Esfera do balão
-        ballon.putSphere(100, 250, 100, 100);
-        ballon.cutSphere(100,250,100,99);
+putellipsoid 100 101 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 101 100 20 1 20
 
-        //Base para o ar quente
-        ballon.putEllipsoid(100, 100, 100, 20, 1, 20);
+putellipsoid 100 102 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 102 100 20 1 20
 
-        //Forma para o encaminhamento do ar quente
-        for (int h = 0; h <= 52; h++){
-            ballon.putEllipsoid(100, (100+h), 100, 21, 1, 21);
-            ballon.cutEllipsoid(100, (100+h), 100, 20, 1, 20);
-            }
+putellipsoid 100 103 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 103 100 20 1 20
 
-        //Estrutura de fixação entre balão e o cesto
-        for (int i = 0; i <=50; i++){
-            ballon.putEllipsoid(100, (125+i), 100,(14+i), 1, (14+i));
-            ballon.cutEllipsoid(100, (125+i), 100,(13+i), 1, (13+i));
-            }
-    }
-    void criarCordas (){
+putellipsoid 100 104 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 104 100 20 1 20
 
-        //Base para as cordas
-        ballon.setColor(0.76,0.7,0.5, 1.0);
-        ballon.putBox(76, 80, 40, 41, 76, 80);
-        ballon.putBox(120, 124, 40, 41, 120, 124);
-        ballon.putBox(76, 80, 40, 41, 120, 124);
-        ballon.putBox(120, 124, 40, 41, 76, 80);
+putellipsoid 100 105 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 105 100 20 1 20
 
-        ballon.putBox(78, 80, 38, 39, 78, 80);
-        ballon.putBox(120, 122, 38, 39, 120, 122);
-        ballon.putBox(78, 80, 38, 39, 120, 122);
-        ballon.putBox(120, 122, 38, 39, 78, 80);
+putellipsoid 100 106 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 106 100 20 1 20
 
-        ballon.putBox(79, 80, 37, 37, 79, 80);
-        ballon.putBox(120, 121, 37, 37, 120, 121);
-        ballon.putBox(79, 80, 37, 37, 120, 121);
-        ballon.putBox(120, 121, 37, 37, 79, 80);
+putellipsoid 100 107 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 107 100 20 1 20
 
-        //Cordas
-        ballon.setColor(0.63, 0.32, 0.18, 1.0);
-        ballon.putBox(77, 79, 42, 88, 77, 79);
-        ballon.putBox(121, 123, 42, 88, 121, 123);
-        ballon.putBox(77, 79, 42, 88, 121, 123);
-        ballon.putBox(121, 123,42, 88, 77, 79);
+putellipsoid 100 108 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 108 100 20 1 20
 
-        //Cordas ramificadas para o centro
+putellipsoid 100 109 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 109 100 20 1 20
 
-        for( int c = 0; c <= 46; c++) {
-            ballon.putBox((77+c), (78+c), (89), (89), (77+c), (78+c));
-            ballon.putBox((121-c), (122-c), (89), (89), (121-c), (122-c));
-            ballon.putBox((77+c), (78+c), (89), (89), (121-c), (122-c));
-            ballon.putBox((121-c), (122-c), (89), (89), (77+c), (78+c));
-        }
+putellipsoid 100 110 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 110 100 20 1 20
 
-        //Cordas até o balão
-        ballon.putBox(77, 79, 89, 175, 77, 79);
-        ballon.putBox(121, 123, 89, 175, 121, 123);
-        ballon.putBox(77, 79, 89, 175, 121, 123);
-        ballon.putBox(121, 123,89, 175, 77, 79);
+putellipsoid 100 111 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 111 100 20 1 20
+
+putellipsoid 100 112 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 112 100 20 1 20
+
+putellipsoid 100 113 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 113 100 20 1 20
+
+putellipsoid 100 114 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 114 100 20 1 20
+
+putellipsoid 100 115 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 115 100 20 1 20
+
+putellipsoid 100 116 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 116 100 20 1 20
+
+putellipsoid 100 117 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 117 100 20 1 20
+
+putellipsoid 100 118 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 118 100 20 1 20
+
+putellipsoid 100 119 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 119 100 20 1 20
+
+putellipsoid 100 120 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 120 100 20 1 20
+
+putellipsoid 100 121 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 121 100 20 1 20
+
+putellipsoid 100 122 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 122 100 20 1 20
+
+putellipsoid 100 123 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 123 100 20 1 20
+
+putellipsoid 100 124 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 124 100 20 1 20
+
+putellipsoid 100 125 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 125 100 20 1 20
+
+putellipsoid 100 126 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 126 100 20 1 20
+
+putellipsoid 100 127 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 127 100 20 1 20
+
+putellipsoid 100 128 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 128 100 20 1 20
+
+putellipsoid 100 129 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 129 100 20 1 20
+
+putellipsoid 100 130 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 130 100 20 1 20
+
+putellipsoid 100 131 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 131 100 20 1 20
+
+putellipsoid 100 132 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 132 100 20 1 20
+
+putellipsoid 100 133 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 133 100 20 1 20
+
+putellipsoid 100 134 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 134 100 20 1 20
+
+putellipsoid 100 135 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 135 100 20 1 20
+
+putellipsoid 100 136 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 136 100 20 1 20
+
+putellipsoid 100 137 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 137 100 20 1 20
+
+putellipsoid 100 138 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 138 100 20 1 20
+
+putellipsoid 100 139 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 139 100 20 1 20
+
+putellipsoid 100 140 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 140 100 20 1 20
+
+putellipsoid 100 141 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 141 100 20 1 20
+
+putellipsoid 100 142 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 142 100 20 1 20
+
+putellipsoid 100 143 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 143 100 20 1 20
+
+putellipsoid 100 144 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 144 100 20 1 20
+
+putellipsoid 100 145 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 145 100 20 1 20
+
+putellipsoid 100 146 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 146 100 20 1 20
+
+putellipsoid 100 147 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 147 100 20 1 20
+
+putellipsoid 100 148 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 148 100 20 1 20
+
+putellipsoid 100 149 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 149 100 20 1 20
+
+putellipsoid 100 150 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 150 100 20 1 20
+
+putellipsoid 100 151 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 151 100 20 1 20
+
+putellipsoid 100 152 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 152 100 20 1 20
+
+putellipsoid 100 153 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 153 100 20 1 20
+
+putellipsoid 100 154 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 154 100 20 1 20
+
+putellipsoid 100 155 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 155 100 20 1 20
+
+putellipsoid 100 156 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 156 100 20 1 20
+
+putellipsoid 100 157 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 157 100 20 1 20
+
+putellipsoid 100 158 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 158 100 20 1 20
+
+putellipsoid 100 159 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 159 100 20 1 20
+
+putellipsoid 100 160 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 160 100 20 1 20
+
+putellipsoid 100 161 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 161 100 20 1 20
+
+putellipsoid 100 162 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 162 100 20 1 20
+
+putellipsoid 100 163 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 163 100 20 1 20
+
+putellipsoid 100 164 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 164 100 20 1 20
+
+putellipsoid 100 165 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 165 100 20 1 20
+
+putellipsoid 100 166 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 166 100 20 1 20
+
+putellipsoid 100 167 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 167 100 20 1 20
+
+putellipsoid 100 168 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 168 100 20 1 20
+
+putellipsoid 100 169 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 169 100 20 1 20
+
+putellipsoid 100 170 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 170 100 20 1 20
 
 
-        //Estrutura de fixação das cordas
-        ballon.setColor(0.80, 0.52, 0.25, 1.0);
-        ballon.putBox(75, 81, 81, 86, 75, 81);
-        ballon.putBox(75, 81, 81, 86, 119, 125);
-        ballon.putBox(119, 125, 81, 86, 75, 81);
-        ballon.putBox(119, 125, 81, 86, 119, 125);
+putellipsoid 100 125 100 14 1 14 1.0 0.0 0.0 1.0
+cutellipsoid 100 125 100 13 1 13
 
-        //Estrutura de fixação entre as cordas
-        ballon.setColor(0.80, 0.52, 0.25, 1.0);
-        ballon.putBox(82, 119, 81, 86, 75, 81);
-        ballon.putBox(82, 119, 81, 86, 119, 125);
-        ballon.putBox(119, 125, 81, 86, 82, 119);
-        ballon.putBox(75, 81, 81, 86, 82, 125);
+putellipsoid 100 126 100 15 1 15 1.0 0.0 0.0 1.0
+cutellipsoid 100 126 100 14 1 14
 
-    }
+putellipsoid 100 127 100 16 1 16 1.0 0.0 0.0 1.0
+cutellipsoid 100 127 100 15 1 15
 
-    void criarCesto (){
+putellipsoid 100 128 100 17 1 17 1.0 0.0 0.0 1.0
+cutellipsoid 100 128 100 16 1 16
 
-        //Cubo do cesto e retidado da parte interna
-        ballon.setColor(0.80, 0.52, 0.25, 1.0);
-        ballon.putBox(80, 120, 0, 40, 80, 120);
-        ballon.cutBox(82, 118, 2, 40, 82, 118);
+putellipsoid 100 129 100 18 1 18 1.0 0.0 0.0 1.0
+cutellipsoid 100 129 100 17 1 17
 
-        //Detalhes
-        for (int l = 0; l <= 10; l++){
-                ballon.cutBox(85+l,115-l,40-l,40-l,80,81);
-                ballon.cutBox(85+l,115-l,40-l,40-l,119,120);
-                ballon.cutBox(80,81,40-l,40-l,85+l,115-l);
-                ballon.cutBox(119,120,40-l,40-l,85+l,115-l);
-            }
-    }
+putellipsoid 100 130 100 19 1 19 1.0 0.0 0.0 1.0
+cutellipsoid 100 130 100 18 1 18
 
-    void criarMacarico(){
+putellipsoid 100 131 100 20 1 20 1.0 0.0 0.0 1.0
+cutellipsoid 100 131 100 19 1 19
 
-        //Encapsulamento do fogo (mola)
+putellipsoid 100 132 100 21 1 21 1.0 0.0 0.0 1.0
+cutellipsoid 100 132 100 20 1 20
 
-        ballon.setColor(0.71,0.72,0.69, 1.0);
-        for(int m = 0; m <= 5; m++){
-            ballon.putEllipsoid(100,(100 - 2*m),100, 10, 1, 10);
-            ballon.cutEllipsoid(100,(100 - 2*m),100, 9, 1, 9);
-            ballon.putVoxels(109,(99-2*m),(102-m));
-            ballon.cutVoxels(109,(100-2*m),(102-m));
-            ballon.cutVoxels(109,(100-2*m),(103-m));
+putellipsoid 100 133 100 22 1 22 1.0 0.0 0.0 1.0
+cutellipsoid 100 133 100 21 1 21
 
-        }
-            //Retirando o voxels extra
-            ballon.cutVoxels(109,89,97);
+putellipsoid 100 134 100 23 1 23 1.0 0.0 0.0 1.0
+cutellipsoid 100 134 100 22 1 22
 
+putellipsoid 100 135 100 24 1 24 1.0 0.0 0.0 1.0
+cutellipsoid 100 135 100 23 1 23
 
-            //Criando a "base" para o fogo
-            ballon.setColor(0.32,0.34,0.33,1.0);
-            ballon.putEllipsoid(100,(90),100, 5, 1, 5);
-            ballon.cutVoxels(100,91,100);
+putellipsoid 100 136 100 25 1 25 1.0 0.0 0.0 1.0
+cutellipsoid 100 136 100 24 1 24
 
-            //Estrutura do fogo
-            ballon.setColor(1.0, 0.271, 0.0, 0.7);
-            ballon.putBox(98,102,91,104, 98,102);
+putellipsoid 100 137 100 26 1 26 1.0 0.0 0.0 1.0
+cutellipsoid 100 137 100 25 1 25
 
-            //Tentativa de criar a sensação do fogo
-            for (int l = 0; l <= 3; l++){
-                ballon.cutBox((98+l),(102-l),(104-l),(104-l), (98+l),(102-l));
-                ballon.cutBox((98+l),(102-l),(104-l),(104-l), (98),(98));
-                ballon.cutBox((98+l),(102-l),(104-l),(104-l), (102),(102));
-                ballon.cutBox((98),(98),(104-l),(104-l), (98+l),(102-l));
-                ballon.cutBox((102),(102),(104-l),(104-l), (98+l),(102-l));
-            }
-            //Detalhes do fogo
-                ballon.cutBox(99,101,102,102,99,101);
-                ballon.cutVoxels(100,101,100);
-    }
+putellipsoid 100 138 100 27 1 27 1.0 0.0 0.0 1.0
+cutellipsoid 100 138 100 26 1 26
 
-    void criarEnfeites(){
-        //Criando aros dourados em volta do balao
-        ballon.setColor(0.937,0.749,0.016, 0.7);
-        ballon.putEllipsoid(100, 250, 100, 101,1,101);
-        ballon.cutEllipsoid(100, 250, 100, 100,1,100);
-        ballon.putEllipsoid(100, 275, 100, 101,1,101);
-        ballon.cutEllipsoid(100, 275, 100, 100,1,100);
-        ballon.putEllipsoid(100, 225, 100, 101,1,101);
-        ballon.cutEllipsoid(100, 225, 100, 100,1,100);
-        }
+putellipsoid 100 139 100 28 1 28 1.0 0.0 0.0 1.0
+cutellipsoid 100 139 100 27 1 27
 
-     void salvarOFF(const std::string &nomeArquivo) {
-        ballon.writeOFF(nomeArquivo);
-    }
-};
-int main() {
+putellipsoid 100 140 100 29 1 29 1.0 0.0 0.0 1.0
+cutellipsoid 100 140 100 28 1 28
 
+putellipsoid 100 141 100 30 1 30 1.0 0.0 0.0 1.0
+cutellipsoid 100 141 100 29 1 29
 
-    meuBalao desenho(600, 600, 600);
+putellipsoid 100 142 100 31 1 31 1.0 0.0 0.0 1.0
+cutellipsoid 100 142 100 30 1 30
 
-    desenho.criarEnfeites();
-    desenho.criarMacarico();
-    desenho.criarCordas();
-    desenho.criarBalao();
-    desenho.criarCesto();
+putellipsoid 100 143 100 32 1 32 1.0 0.0 0.0 1.0
+cutellipsoid 100 143 100 31 1 31
 
-    // Salvando o resultado no formato OFF
-    desenho.salvarOFF("balloon.off");
+putellipsoid 100 144 100 33 1 33 1.0 0.0 0.0 1.0
+cutellipsoid 100 144 100 32 1 32
 
-    std::cout << "Balão criado e salvo como 'balloon.off'" << std::endl;
-    return 0;
-}
+putellipsoid 100 145 100 34 1 34 1.0 0.0 0.0 1.0
+cutellipsoid 100 145 100 33 1 33
 
+putellipsoid 100 146 100 35 1 35 1.0 0.0 0.0 1.0
+cutellipsoid 100 146 100 34 1 34
 
+putellipsoid 100 147 100 36 1 36 1.0 0.0 0.0 1.0
+cutellipsoid 100 147 100 35 1 35
+
+putellipsoid 100 148 100 37 1 37 1.0 0.0 0.0 1.0
+cutellipsoid 100 148 100 36 1 36
+
+putellipsoid 100 149 100 38 1 38 1.0 0.0 0.0 1.0
+cutellipsoid 100 149 100 37 1 37
+
+putellipsoid 100 150 100 39 1 39 1.0 0.0 0.0 1.0
+cutellipsoid 100 150 100 38 1 38
+
+putellipsoid 100 151 100 40 1 40 1.0 0.0 0.0 1.0
+cutellipsoid 100 151 100 39 1 39
+
+putellipsoid 100 152 100 41 1 41 1.0 0.0 0.0 1.0
+cutellipsoid 100 152 100 40 1 40
+
+putellipsoid 100 153 100 42 1 42 1.0 0.0 0.0 1.0
+cutellipsoid 100 153 100 41 1 41
+
+putellipsoid 100 154 100 43 1 43 1.0 0.0 0.0 1.0
+cutellipsoid 100 154 100 42 1 42
+
+putellipsoid 100 155 100 44 1 44 1.0 0.0 0.0 1.0
+cutellipsoid 100 155 100 43 1 43
+
+putellipsoid 100 156 100 45 1 45 1.0 0.0 0.0 1.0
+cutellipsoid 100 156 100 44 1 44
+
+putellipsoid 100 157 100 46 1 46 1.0 0.0 0.0 1.0
+cutellipsoid 100 157 100 45 1 45
+
+putellipsoid 100 158 100 47 1 47 1.0 0.0 0.0 1.0
+cutellipsoid 100 158 100 46 1 46
+
+putellipsoid 100 159 100 48 1 48 1.0 0.0 0.0 1.0
+cutellipsoid 100 159 100 47 1 47
+
+putellipsoid 100 160 100 49 1 49 1.0 0.0 0.0 1.0
+cutellipsoid 100 160 100 48 1 48
+
+putellipsoid 100 161 100 50 1 50 1.0 0.0 0.0 1.0
+cutellipsoid 100 161 100 49 1 49
+
+putellipsoid 100 162 100 51 1 51 1.0 0.0 0.0 1.0
+cutellipsoid 100 162 100 50 1 50
+
+putellipsoid 100 163 100 52 1 52 1.0 0.0 0.0 1.0
+cutellipsoid 100 163 100 51 1 51
+
+putellipsoid 100 164 100 53 1 53 1.0 0.0 0.0 1.0
+cutellipsoid 100 164 100 52 1 52
+
+putellipsoid 100 165 100 54 1 54 1.0 0.0 0.0 1.0
+cutellipsoid 100 165 100 53 1 53
+
+putellipsoid 100 166 100 55 1 55 1.0 0.0 0.0 1.0
+cutellipsoid 100 166 100 54 1 54
+
+putellipsoid 100 167 100 56 1 56 1.0 0.0 0.0 1.0
+cutellipsoid 100 167 100 55 1 55
+
+putellipsoid 100 168 100 57 1 57 1.0 0.0 0.0 1.0
+cutellipsoid 100 168 100 56 1 56
+
+putellipsoid 100 169 100 58 1 58 1.0 0.0 0.0 1.0
+cutellipsoid 100 169 100 57 1 57
+
+putellipsoid 100 170 100 59 1 59 1.0 0.0 0.0 1.0
+cutellipsoid 100 170 100 58 1 58
+
+putellipsoid 100 171 100 60 1 60 1.0 0.0 0.0 1.0
+cutellipsoid 100 171 100 59 1 59
+
+putellipsoid 100 172 100 61 1 61 1.0 0.0 0.0 1.0
+cutellipsoid 100 172 100 60 1 60
+
+putellipsoid 100 173 100 62 1 62 1.0 0.0 0.0 1.0
+cutellipsoid 100 173 100 61 1 61
+
+putellipsoid 100 174 100 63 1 63 1.0 0.0 0.0 1.0
+cutellipsoid 100 174 100 62 1 62
+
+putellipsoid 100 175 100 64 1 64 1.0 0.0 0.0 1.0
+cutellipsoid 100 175 100 63 1 63
+
+putellipsoid 100 176 100 65 1 65 1.0 0.0 0.0 1.0
+cutellipsoid 100 176 100 64 1 64
+
+putellipsoid 100 177 100 66 1 66 1.0 0.0 0.0 1.0
+cutellipsoid 100 177 100 65 1 65
+
+putellipsoid 100 178 100 67 1 67 1.0 0.0 0.0 1.0
+cutellipsoid 100 178 100 66 1 66
+
+putellipsoid 100 179 100 68 1 68 1.0 0.0 0.0 1.0
+cutellipsoid 100 179 100 67 1 67
+
+putellipsoid 100 180 100 69 1 69 1.0 0.0 0.0 1.0
+cutellipsoid 100 180 100 68 1 68
+
+putellipsoid 100 181 100 70 1 70 1.0 0.0 0.0 1.0
+cutellipsoid 100 181 100 69 1 69
+
+putellipsoid 100 182 100 71 1 71 1.0 0.0 0.0 1.0
+cutellipsoid 100 182 100 70 1 70
+
+putellipsoid 100 183 100 72 1 72 1.0 0.0 0.0 1.0
+cutellipsoid 100 183 100 71 1 71
+
+putellipsoid 100 184 100 73 1 73 1.0 0.0 0.0 1.0
+cutellipsoid 100 184 100 72 1 72
+
+putellipsoid 100 185 100 74 1 74 1.0 0.0 0.0 1.0
+cutellipsoid 100 185 100 73 1 73
+
+putellipsoid 100 186 100 75 1 75 1.0 0.0 0.0 1.0
+cutellipsoid 100 186 100 74 1 74
+
+putbox 76 80 40 41 76 80 0.76 0.7 0.5 1.0
+putbox 120 124 40 41 120 124 0.76 0.7 0.5 1.0
+putbox 76 80 40 41 120 124 0.76 0.7 0.5 1.0
+putbox 120 124 40 41 76 80 0.76 0.7 0.5 1.0
+
+putbox 78 80 38 39 78 80 0.76 0.7 0.5 1.0
+putbox 120 122 38 39 120 122 0.76 0.7 0.5 1.0
+putbox 78 80 38 39 120 122 0.76 0.7 0.5 1.0
+putbox 120 122 38 39 78 80 0.76 0.7 0.5 1.0
+
+putbox 79 80 37 37 79 80 0.76 0.7 0.5 1.0
+putbox 120 121 37 37 120 121 0.76 0.7 0.5 1.0
+putbox 79 80 37 37 120 121 0.76 0.7 0.5 1.0
+putbox 120 121 37 37 79 80 0.76 0.7 0.5 1.0
+
+putbox 77 79 42 88 77 79 0.63 0.32 0.18 1.0
+putbox 121 123 42 88 121 123 0.63 0.32 0.18 1.0
+putbox 77 79 42 88 121 123 0.63 0.32 0.18 1.0
+putbox 121 123 42 88 77 79 0.63 0.32 0.18 1.0
+
+putbox 77 78 89 89 77 78 0.63 0.32 0.18 1.0
+putbox 121 122 89 89 121 122 0.63 0.32 0.18 1.0
+putbox 77 78 89 89 121 122 0.63 0.32 0.18 1.0
+putbox 121 122 89 89 77 78 0.63 0.32 0.18 1.0
+
+putbox 78 79 89 89 78 79 0.63 0.32 0.18 1.0
+putbox 120 121 89 89 120 121 0.63 0.32 0.18 1.0
+putbox 78 79 89 89 120 121 0.63 0.32 0.18 1.0
+putbox 120 121 89 89 78 79 0.63 0.32 0.18 1.0
+
+putbox 79 80 89 89 79 80 0.63 0.32 0.18 1.0
+putbox 119 120 89 89 119 120 0.63 0.32 0.18 1.0
+putbox 79 80 89 89 119 120 0.63 0.32 0.18 1.0
+putbox 119 120 89 89 79 80 0.63 0.32 0.18 1.0
+
+putbox 80 81 89 89 80 81 0.63 0.32 0.18 1.0
+putbox 118 119 89 89 118 119 0.63 0.32 0.18 1.0
+putbox 80 81 89 89 118 119 0.63 0.32 0.18 1.0
+putbox 118 119 89 89 80 81 0.63 0.32 0.18 1.0
+
+putbox 81 82 89 89 81 82 0.63 0.32 0.18 1.0
+putbox 117 118 89 89 117 118 0.63 0.32 0.18 1.0
+putbox 81 82 89 89 117 118 0.63 0.32 0.18 1.0
+putbox 117 118 89 89 81 82 0.63 0.32 0.18 1.0
+
+putbox 82 83 89 89 82 83 0.63 0.32 0.18 1.0
+putbox 116 117 89 89 116 117 0.63 0.32 0.18 1.0
+putbox 82 83 89 89 116 117 0.63 0.32 0.18 1.0
+putbox 116 117 89 89 82 83 0.63 0.32 0.18 1.0
+
+putbox 83 84 89 89 83 84 0.63 0.32 0.18 1.0
+putbox 115 116 89 89 115 116 0.63 0.32 0.18 1.0
+putbox 83 84 89 89 115 116 0.63 0.32 0.18 1.0
+putbox 115 116 89 89 83 84 0.63 0.32 0.18 1.0
+
+putbox 84 85 89 89 84 85 0.63 0.32 0.18 1.0
+putbox 114 115 89 89 114 115 0.63 0.32 0.18 1.0
+putbox 84 85 89 89 114 115 0.63 0.32 0.18 1.0
+putbox 114 115 89 89 84 85 0.63 0.32 0.18 1.0
+
+putbox 85 86 89 89 85 86 0.63 0.32 0.18 1.0
+putbox 113 114 89 89 113 114 0.63 0.32 0.18 1.0
+putbox 85 86 89 89 113 114 0.63 0.32 0.18 1.0
+putbox 113 114 89 89 85 86 0.63 0.32 0.18 1.0
+
+putbox 86 87 89 89 86 87 0.63 0.32 0.18 1.0
+putbox 112 113 89 89 112 113 0.63 0.32 0.18 1.0
+putbox 86 87 89 89 112 113 0.63 0.32 0.18 1.0
+putbox 112 113 89 89 86 87 0.63 0.32 0.18 1.0
+
+putbox 87 88 89 89 87 88 0.63 0.32 0.18 1.0
+putbox 111 112 89 89 111 112 0.63 0.32 0.18 1.0
+putbox 87 88 89 89 111 112 0.63 0.32 0.18 1.0
+putbox 111 112 89 89 87 88 0.63 0.32 0.18 1.0
+
+putbox 88 89 89 89 88 89 0.63 0.32 0.18 1.0
+putbox 110 111 89 89 110 111 0.63 0.32 0.18 1.0
+putbox 88 89 89 89 110 111 0.63 0.32 0.18 1.0
+putbox 110 111 89 89 88 89 0.63 0.32 0.18 1.0
+
+putbox 89 90 89 89 89 90 0.63 0.32 0.18 1.0
+putbox 109 110 89 89 109 110 0.63 0.32 0.18 1.0
+putbox 89 90 89 89 109 110 0.63 0.32 0.18 1.0
+putbox 109 110 89 89 89 90 0.63 0.32 0.18 1.0
+
+putbox 90 91 89 89 90 91 0.63 0.32 0.18 1.0
+putbox 108 109 89 89 108 109 0.63 0.32 0.18 1.0
+putbox 90 91 89 89 108 109 0.63 0.32 0.18 1.0
+putbox 108 109 89 89 90 91 0.63 0.32 0.18 1.0
+
+putbox 91 92 89 89 91 92 0.63 0.32 0.18 1.0
+putbox 107 108 89 89 107 108 0.63 0.32 0.18 1.0
+putbox 91 92 89 89 107 108 0.63 0.32 0.18 1.0
+putbox 107 108 89 89 91 92 0.63 0.32 0.18 1.0
+
+putbox 92 93 89 89 92 93 0.63 0.32 0.18 1.0
+putbox 106 107 89 89 106 107 0.63 0.32 0.18 1.0
+putbox 92 93 89 89 106 107 0.63 0.32 0.18 1.0
+putbox 106 107 89 89 92 93 0.63 0.32 0.18 1.0
+
+putbox 93 94 89 89 93 94 0.63 0.32 0.18 1.0
+putbox 105 106 89 89 105 106 0.63 0.32 0.18 1.0
+putbox 93 94 89 89 105 106 0.63 0.32 0.18 1.0
+putbox 105 106 89 89 93 94 0.63 0.32 0.18 1.0
+
+putbox 94 95 89 89 94 95 0.63 0.32 0.18 1.0
+putbox 104 105 89 89 104 105 0.63 0.32 0.18 1.0
+putbox 94 95 89 89 104 105 0.63 0.32 0.18 1.0
+putbox 104 105 89 89 94 95 0.63 0.32 0.18 1.0
+
+putbox 95 96 89 89 95 96 0.63 0.32 0.18 1.0
+putbox 103 104 89 89 103 104 0.63 0.32 0.18 1.0
+putbox 95 96 89 89 103 104 0.63 0.32 0.18 1.0
+putbox 103 104 89 89 95 96 0.63 0.32 0.18 1.0
+
+putbox 96 97 89 89 96 97 0.63 0.32 0.18 1.0
+putbox 102 103 89 89 102 103 0.63 0.32 0.18 1.0
+putbox 96 97 89 89 102 103 0.63 0.32 0.18 1.0
+putbox 102 103 89 89 96 97 0.63 0.32 0.18 1.0
+
+putbox 97 98 89 89 97 98 0.63 0.32 0.18 1.0
+putbox 101 102 89 89 101 102 0.63 0.32 0.18 1.0
+putbox 97 98 89 89 101 102 0.63 0.32 0.18 1.0
+putbox 101 102 89 89 97 98 0.63 0.32 0.18 1.0
+
+putbox 98 99 89 89 98 99 0.63 0.32 0.18 1.0
+putbox 100 101 89 89 100 101 0.63 0.32 0.18 1.0
+putbox 98 99 89 89 100 101 0.63 0.32 0.18 1.0
+putbox 100 101 89 89 98 99 0.63 0.32 0.18 1.0
+
+putbox 77 79 89 175 77 79 0.63 0.32 0.18 1.0
+putbox 121 123 89 175 121 123 0.63 0.32 0.18 1.0
+putbox 77 79 89 175 121 123 0.63 0.32 0.18 1.0
+putbox 121 123 89 175 77 79 0.63 0.32 0.18 1.0
+
+putbox 75 81 75 81 75 81 0.8 0.52 0.25 1
+putbox 75 81 81 86 75 81 0.8 0.52 0.25 1
+putbox 75 81 81 86 119 125 0.8 0.52 0.25 1
+putbox 119 125 81 86 75 81 0.8 0.52 0.25 1
+putbox 119 125 81 86 119 125 0.8 0.52 0.25 1
+
+putbox 82 119 75 81 75 81 0.8 0.52 0.25 1
+putbox 82 119 81 86 75 81 0.8 0.52 0.25 1
+putbox 119 125 81 86 82 119 0.8 0.52 0.25 1
+putbox 75 81 81 86 82 125 0.8 0.52 0.25 1
+
+putbox 80 120 0 40 80 120 0.8 0.52 0.25 1
+cutbox 82 118 2 40 82 118
+
+cutbox 85 115 40 40 80 81
+cutbox 85 115 40 40 119 120
+cutbox 80 81 40 40 85 115
+cutbox 119 120 40 40 85 115
+cutbox 86 114 39 39 80 81
+cutbox 86 114 39 39 119 120
+cutbox 80 81 39 39 86 114
+cutbox 119 120 39 39 86 114
+cutbox 87 113 38 38 80 81
+cutbox 87 113 38 38 119 120
+cutbox 80 81 38 38 87 113
+cutbox 119 120 38 38 87 113
+cutbox 88 112 37 37 80 81
+cutbox 88 112 37 37 119 120
+cutbox 80 81 37 37 88 112
+cutbox 119 120 37 37 88 112
+cutbox 89 111 36 36 80 81
+cutbox 89 111 36 36 119 120
+cutbox 80 81 36 36 89 111
+cutbox 119 120 36 36 89 111
+cutbox 90 110 35 35 80 81
+cutbox 90 110 35 35 119 120
+cutbox 80 81 35 35 90 110
+cutbox 119 120 35 35 90 110
+cutbox 91 109 34 34 80 81
+cutbox 91 109 34 34 119 120
+cutbox 80 81 34 34 91 109
+cutbox 119 120 34 34 91 109
+cutbox 92 108 33 33 80 81
+cutbox 92 108 33 33 119 120
+cutbox 80 81 33 33 92 108
+cutbox 119 120 33 33 92 108
+cutbox 93 107 32 32 80 81
+cutbox 93 107 32 32 119 120
+cutbox 80 81 32 32 93 107
+cutbox 119 120 32 32 93 107
+cutbox 94 106 31 31 80 81
+cutbox 94 106 31 31 119 120
+cutbox 80 81 31 31 94 106
+cutbox 119 120 31 31 94 106
+cutbox 95 105 30 30 80 81
+cutbox 95 105 30 30 119 120
+cutbox 80 81 30 30 95 105
+cutbox 119 120 30 30 95 105
+
+putEllipsoid 100 100 100 10 1 10 0.71 0.72 0.69 1.0
+cutEllipsoid 100 100 100 9 1 9 0.71 0.72 0.69 1.0
+putVoxels 109 99 102  0.71 0.72 0.69 1.0
+cutVoxels 109 100 102
+cutVoxels 109 100 103
+putEllipsoid 100 98 100 10 1 10 0.71 0.72 0.69 1.0
+cutEllipsoid 100 98 100 9 1 9 0.71 0.72 0.69 1.0
+putVoxels 109 97 101  0.71 0.72 0.69 1.0
+cutVoxels 109 98 101
+cutVoxels 109 98 102
+putEllipsoid 100 96 100 10 1 10 0.71 0.72 0.69 1.0
+cutEllipsoid 100 96 100 9 1 9 0.71 0.72 0.69 1.0
+putVoxels 109 95 100  0.71 0.72 0.69 1.0
+cutVoxels 109 96 100
+cutVoxels 109 96 101
+putEllipsoid 100 94 100 10 1 10 0.71 0.72 0.69 1.0
+cutEllipsoid 100 94 100 9 1 9 0.71 0.72 0.69 1.0
+putVoxels 109 93 99  0.71 0.72 0.69 1.0
+cutVoxels 109 94 99
+cutVoxels 109 94 100
+putEllipsoid 100 92 100 10 1 10 0.71 0.72 0.69 1.0
+cutEllipsoid 100 92 100 9 1 9 0.71 0.72 0.69 1.0
+putVoxels 109 91 98  0.71 0.72 0.69 1.0
+cutVoxels 109 92 98
+cutVoxels 109 92 99
+putEllipsoid 100 90 100 10 1 10 0.71 0.72 0.69 1.0
+cutEllipsoid 100 90 100 9 1 9 0.71 0.72 0.69 1.0
+putVoxels 109 89 97  0.71 0.72 0.69 1.0
+cutVoxels 109 90 97
+cutVoxels 109 90 98
+
+cutVoxels 109 89 97
+
+putEllipsoid 100 90 100 5 1 5 0.32 0.34 0.33 1.0
+cutVoxels 100 91 100 0.32 0.34 0.33 1.0
+
+putBox 98 102 91 104 98 102 1.0 0.271 0.0 0.7
+
+cutBox 98 102 104 104 98 102
+cutBox 98 102 104 104 98 98
+cutBox 98 102 104 104 102 102
+cutBox 98 98 104 104 98 102
+cutBox 102 102 104 104 98 102
+
+cutBox 99 101 103 103 99 101
+cutBox 99 101 103 103 98 98
+cutBox 99 101 103 103 102 102
+cutBox 98 98 103 103 99 101
+cutBox 102 102 103 103 99 101
+
+cutBox 100 100 102 102 100 100
+cutBox 100 100 102 102 100 98
+cutBox 100 100 102 102 102 102
+cutBox 98 98 102 102 100 100
+cutBox 102 102 102 102 100 100
+
+cutBox 99 101 102 102 99 101
+cutVoxels 100 101 100
+ 
+putEllipsoid 100 250 100 101 1 101 0.937 0.749 0.016 0.7
+cutEllipsoid 100 250 100 100 1 100
+putEllipsoid 100 275 100 101 1 101 0.937 0.749 0.016 0.7
+cutEllipsoid 100 275 100 100 1 100
+putEllipsoid 100 225 100 101 1 101 0.937 0.749 0.016 0.7
+cutEllipsoid 100 225 100 100 1 100
